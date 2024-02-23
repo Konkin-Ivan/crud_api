@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "7b8489e9-ea80-4219-b7c1-4d649033c013",
+		"name": "CRUD API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22665788",
+		"_collection_link": "https://planetary-desert-970514.postman.co/workspace/New-Team-Workspace~c682ff6c-4057-49da-94b8-cb8c119c7c3f/collection/22665788-7b8489e9-ea80-4219-b7c1-4d649033c013?action=share&source=collection_link&creator=22665788"
+	},
+	"item": [
+		{
+			"name": "user_create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "email",
+						"value": "konkin.ivan@yandex.ru",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"johndoe@example.com\",\n    \"age\": 37,\n    \"sex\": \"man\",\n    \"phone\": \"89885000987\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/v.1/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v.1",
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/v.1/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v.1",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"johndoe@example.com\",\n    \"name\": \"John Doe\",\n    \"age\": 31,\n    \"sex\": \"man\",\n    \"phone\": \"89885000987\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api/v.1/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v.1",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api/v.1/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"v.1",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

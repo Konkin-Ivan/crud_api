@@ -2,16 +2,15 @@
 
 namespace App\Entity;
 
-use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
-#[ORM\Entity(repositoryClass: UserRepository::class)]
+#[ORM\Entity]
 #[ORM\Table(name: '`user`')]
 class User
 {
     #[ORM\Id]
-    #[ORM\GeneratedValue]
+    #[ORM\GeneratedValue(strategy: "AUTO")]
     #[ORM\Column(type: "integer")]
     private ?int $id = null;
 

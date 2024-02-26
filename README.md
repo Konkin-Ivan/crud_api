@@ -23,5 +23,3 @@
 - user_create (POST)
 - user_update (PUT)
 - user_delete (DELETE)
-#### Unit Tests
-- make test
